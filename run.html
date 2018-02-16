@@ -1,0 +1,25 @@
+<html>
+
+<body>
+        
+    <img id="PacMan" src="PacMan1.png" style="position:absolute" width='200'>
+    <!-- This imports an image file and store it for ready use by anywhere in the script-->
+
+    <script src="exercise.js"></script>
+
+<!-- This imports a javascript file and runs it > note we can run the portion below as well-->
+
+    <script type="text/javascript">
+    // Window.onload, meaning load the function upon opening the webpage
+        window.onload = function() {
+            exercise.pos = {
+                x: 0
+            };
+            // exercise.img1 = document.getElementById('PacMan');
+            setInterval(exercise.run, 200);
+        };
+    </script>
+
+   
+</body>
+</html>
